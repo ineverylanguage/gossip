@@ -1,0 +1,17 @@
+[package]
+name = "gossip"
+version = "0.1.0"
+authors = ["Russell Hay <me@russellhay.com>"]
+
+[lib]
+name = "gossip"
+path = "src/lib.rs"
+test = true
+doctest = true
+bench = true
+doc = true
+plugin = false
+create-type = ["dylib", "staticlib"]
+
+[dependencies]
+protobuf = "~1.0"
